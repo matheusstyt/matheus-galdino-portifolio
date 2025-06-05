@@ -1,25 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
+import { ConfigProvider } from 'antd';
 import './App.css';
+import HomePage from './pages/home';
+import { createStyles } from 'antd-style';
 
 function App() {
+
+  const useStyle = createStyles(({ prefixCls, css }) => ({
+    linearGradientButton: css`
+      &.${prefixCls}-btn-primary:not([disabled]):not(.${prefixCls}-btn-dangerous) {
+        > span {
+          position: relative;
+        }
+  
+        &::before {
+          content: '';
+          background: linear-gradient(135deg, #e34c26, #991410);
+          position: absolute;
+          inset: -1px;
+          opacity: 1;
+          transition: all 0.3s;
+          border-radius: inherit;
+        }
+  
+        &:hover::before {
+          opacity: 0;
+        }
+      }
+    `,
+  }));
+
+  const { styles } = useStyle();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ConfigProvider
+      button={{
+        className: styles.linearGradientButton,
+      }}
+    >
+      <HomePage/>
+    </ConfigProvider>
   );
 }
 

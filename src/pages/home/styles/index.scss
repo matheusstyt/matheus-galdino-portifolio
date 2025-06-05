@@ -1,0 +1,43 @@
+.section-home {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-direction: row;
+    padding-top: 2em;
+    @media (max-width: 768px) {
+      flex-direction: column;
+
+      .name {
+        order: 1;
+      }
+    
+      .services {
+        order: 2;
+      }
+    
+      .photo {
+        order: 3;
+      }
+    }
+  
+}
+.section-skills{
+    display: flex;
+    background-color: #4d5163;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -2em;
+    flex: 1;
+}
+.section-projects{
+    display: flex;
+    //background-color: #4d5163;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -2em;
+    flex: 1;
+}
