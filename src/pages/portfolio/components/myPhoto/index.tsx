@@ -16,7 +16,7 @@ const MyPhoto = () => {
                 width: 350,
                 height: 350,
                 borderRadius: 300,
-                backgroundColor: "#3b3e4c",
+                backgroundColor: "#87312d",
                 position: "absolute"
             }}
         >
