@@ -2,6 +2,7 @@ import { ConfigProvider } from 'antd';
 import './App.css';
 import HomePage from './pages/home';
 import { createStyles } from 'antd-style';
+import AppRoutes from './routes';
 
 function App() {
 
@@ -37,7 +38,7 @@ function App() {
         className: styles.linearGradientButton,
       }}
     >
-      <HomePage/>
+      <AppRoutes/>
     </ConfigProvider>
   );
 }

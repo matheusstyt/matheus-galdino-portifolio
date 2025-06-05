@@ -41,3 +41,49 @@
     margin-top: -2em;
     flex: 1;
 }
+
+.homepage-background {
+ 
+  //min-height: 100vh;
+  //width: 100%;
+}
+
+.container {
+  padding: 40px 20px;
+  background-image: url("../../../assets/background/background-1.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.text-title {
+  font-weight: bold;
+  font-size: 32px;
+  color: #c5c8cc;
+}
+
+.service-card {
+  background-color: #1a1a1a;
+  color: #c5c8cc;
+  border: 1px solid #333;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(227, 76, 38, 0.4);
+    border-color: #e34c26;
+  }
+}
+
+.contact-box {
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  border: 1px solid #333;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 6px 16px rgba(227, 76, 38, 0.4);
+  }
+}
