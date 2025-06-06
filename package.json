@@ -2,7 +2,7 @@
   "name": "matheus-galdino-portifolio",
   "version": "0.1.4",
   "private": true,
-  "homepage": "/matheus",
+  "homepage": "/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
